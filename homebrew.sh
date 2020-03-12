@@ -23,11 +23,11 @@ brew bundle
 echo "\n Removing outdated versions from the cellar."
 brew cleanup
 
-if ! grep --quiet $(which fish) /etc/shells; then
-  echo "\n hanging default shell to fish."
-  sudo sh -c "echo $(which fish) >> /etc/shells"
-  chsh -s $(which fish)
-fi
+# if ! grep --quiet $(which fish) /etc/shells; then
+#   echo "\n changing default shell to fish."
+#   sudo sh -c "echo $(which fish) >> /etc/shells"
+#   chsh -s $(which fish)
+# fi
 
 echo " Successfully installed all brew apps.\n"
 
