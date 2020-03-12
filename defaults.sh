@@ -18,15 +18,6 @@ echo "- Expand print panel by default."
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-#echo "- Check for software updates daily, not just once per week."
-#defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
-#echo "- Use Graphite colour for Appearance."
-#osascript -e 'tell application "System Events" to tell appearance preferences to set appearance to graphite'
-
-echo "- Automatically hide and show the menu bar."
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
-
 echo "\n Menu bar."
 
 echo "- Customize the clock look."
