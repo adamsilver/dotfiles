@@ -1,8 +1,4 @@
-<div align="center">
-  <img src="screenshot.png" alt="Screenshot" width="650" />
-</div>
-
-# dotfiles.
+# dotfiles
 
 Actually, mostly just shell scripts. macOS focused.
 

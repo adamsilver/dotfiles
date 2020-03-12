@@ -18,11 +18,11 @@ echo "- Expand print panel by default."
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-echo "- Check for software updates daily, not just once per week."
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+#echo "- Check for software updates daily, not just once per week."
+#defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-echo "- Use Graphite colour for Appearance."
-osascript -e 'tell application "System Events" to tell appearance preferences to set appearance to graphite'
+#echo "- Use Graphite colour for Appearance."
+#osascript -e 'tell application "System Events" to tell appearance preferences to set appearance to graphite'
 
 echo "- Automatically hide and show the menu bar."
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
@@ -48,17 +48,17 @@ defaults write NSGlobalDomain InitialKeyRepeat -integer 15
 
 echo "\n Trackpad."
 
-echo "- Enable three finger drag."
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -integer 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -integer 0
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -integer 0
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -integer 1
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -integer 0
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -integer 0
-defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -integer 1
+# echo "- Enable three finger drag."
+# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -integer 1
+# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -integer 0
+# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -integer 0
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -integer 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -integer 0
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -integer 0
+# defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -integer 1
 
-echo "- Enable four finger Exposé."
-defaults write com.apple.dock showAppExposeGestureEnabled -integer 1
+# echo "- Enable four finger Exposé."
+# defaults write com.apple.dock showAppExposeGestureEnabled -integer 1
 
 echo "\n Dock."
 
@@ -80,8 +80,8 @@ echo "- Set default path to HOME directory."
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
-echo "- When performing a search, search the current folder by default."
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# echo "- When performing a search, search the current folder by default."
+# defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 echo "- Avoid creating .DS_Store files on network volumes."
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -101,10 +101,10 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 echo "- Hide icons for hard drives, servers, and removable media on the desktop."
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+# defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+# defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+# defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 echo "\n Safari."
 
@@ -133,7 +133,7 @@ defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
 echo "- Enable custom stylesheet."
 defaults write com.apple.Safari UserStyleSheetEnabled -bool true
-defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/tvararu/github/dotfiles/safari.css"
+defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/adamsilver/github/dotfiles/safari.css"
 
 echo "\n Transmission.app."
 
@@ -142,11 +142,11 @@ defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads"
 defaults write org.m0k.transmission DownloadLocationConstant -integer 1
 
-echo "- Don’t prompt for confirmation before downloading."
-defaults write org.m0k.transmission DownloadAsk -bool false
+# echo "- Don’t prompt for confirmation before downloading."
+# defaults write org.m0k.transmission DownloadAsk -bool false
 
-echo "- Trash original torrent files."
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+# echo "- Trash original torrent files."
+# defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 echo "- Hide the donate message."
 defaults write org.m0k.transmission WarningDonate -bool false
@@ -155,13 +155,17 @@ echo "- Hide the legal disclaimer."
 defaults write org.m0k.transmission WarningLegal -bool false
 
 echo "- Set up IP block list."
-defaults write org.m0k.transmission BlocklistNew -bool true
-defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
+# defaults write org.m0k.transmission BlocklistNew -bool true
+# defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
+# defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 echo "\n iTerm2.app."
 
-echo "- Use the preferences in the iCloud folder."
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/tvararu/Documents/config/iterm"
+echo "- Use the preferences in the iTerm folder."
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/adamsilver/Documents/config/iterm"
 
 echo "\n All done."
+
+
+echo "\n Spectacle shortcuts."
+cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null

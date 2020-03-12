@@ -1,3 +1,3 @@
 function beats
-	switchaudiosource -s "Theodor’s Beats Studio³"
+	switchaudiosource -s "Adam’s Beats Studio³"
 end

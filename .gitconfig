@@ -1,10 +1,10 @@
 [user]
-  name = Theodor Vararu
-  email = theo@vararu.org
+  name = Adam Silver
+  email = adambsilver@gmail.com
   signingkey = 2847F3FCF08553D8
 [commit]
   gpgsign = true
 [core]
-  excludesfile = /Users/tvararu/.gitignore.global
+  excludesfile = /Users/adamsilver/.gitignore.global
 [gpg]
   program = gpg
