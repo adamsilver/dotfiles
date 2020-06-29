@@ -12,7 +12,6 @@ cp .hushlogin ~
 cp .vimrc ~
 cp .gitconfig ~
 cp .gitignore.global ~
-cp -rv .atom ~
 cp -rv .ssh ~
 
 echo " All done! Enjoy.\n"
