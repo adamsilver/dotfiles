@@ -17,12 +17,12 @@ brew update
 echo "\n brew upgrade any already-installed formulae."
 brew upgrade
 
-echo "\n brew bundling."
-brew bundle
+# echo "\n brew bundling."
+# brew bundle
 
-echo "\n Removing outdated versions from the cellar."
-brew cleanup
+# echo "\n Removing outdated versions from the cellar."
+# brew cleanup
 
-echo " Successfully installed all brew apps.\n"
+# echo " Successfully installed all brew apps.\n"
 
 echo " Homebrew install done.\n"

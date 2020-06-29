@@ -6,6 +6,8 @@ echo "\n Hey there. Never mind me, just setting up your system.\n"
 
 ./homebrew.sh
 
+./brew.sh
+
 cp .hushlogin ~
 cp .vimrc ~
 cp .gitconfig ~

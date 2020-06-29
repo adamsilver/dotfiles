@@ -19,7 +19,7 @@ cask "1password"
 cask "visual-studio-code"
 cask "alfred"
 cask "diskwave"
-cask "homebrew/cask-fonts/font-fira-code"
+cask "homebrew/cask-fonts/font-inconsolata-for-powerline-bold"
 cask "iterm2"
 cask "slack"
 cask "spectacle"
@@ -35,14 +35,14 @@ cask "sketch"
 cask "skype"
 cask "virtualbox"
 cask "firefox"
+cask "brave-browser"
 
 # mac app store
-mas "com.apple.dt.Xcode", id: 497799835
+# mas "com.apple.dt.Xcode", id: 497799835
 mas "com.kryolokovlin.Noizio", id: 928871589
 mas "com.fiplab.clipboard", id: 1020812363
 mas "com.zzd.Xnip", id: 1221250572
 
 # ScanSnap
 # Oh My Zsh
-# brave browser
 # google drive
